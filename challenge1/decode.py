@@ -1,0 +1,1 @@
+print(''.join([chr(len(phrase[1:])) for phrase in open("message.txt", "r").read().split('C')]))
