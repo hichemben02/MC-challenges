@@ -12,15 +12,15 @@ def roman_decoder(string):
         return result
     else:                           # Roman ==> Decimal
         string = string.split('/')
-        decimal = 0
         result = ""
         for item in string:
+            decimal = 0
             for i in range(len(item)):
                 if i > 0 and ROMAN[item[i]] > ROMAN[item[i-1]]:
                     decimal += ROMAN[item[i]] - 2 * ROMAN[item[i-1]]
                 else:
                     decimal += ROMAN[item[i]]
-                
+
             result += str(decimal) + '/'
         return result
 
