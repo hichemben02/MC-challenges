@@ -21,7 +21,7 @@ for instruction in instructions:
             case "L": col -= 1
             case "R": col += 1
         
-        if 0<=row<=2 and 0<=col<=2:
+        if 0 <= row <= 2 and 0 <= col <= 2:
             curr_button = next(button for button, pos in keypad.items() if pos == (row, col))
     secret += curr_button
 
