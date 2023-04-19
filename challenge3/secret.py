@@ -9,7 +9,7 @@ keypad = {
     "7": (2, 0), "8": (2, 1), "9": (2, 2),
 }
 
-# Follow the instructions get the secret
+# Follow the instructions and get the secret
 curr_button = "5"
 secret = ""
 for instruction in instructions:
